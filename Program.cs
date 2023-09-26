@@ -15,9 +15,10 @@ class Program
         return s.Any(char.IsUpper) && s.Any(char.IsLower) && s.Any(char.IsDigit);
     } 
 
+    static string NormalizeString (String input){
+        return input.ToLower().Trim().Replace("," ," ");
 
-
-    
+    }    
 
     static int FindMax(int a, int b, int c)
     {
@@ -35,12 +36,14 @@ class Program
 
         return max;
     }
-
+ 
     static void Main(string[] args)
     {
         // Console.WriteLine("Maximum value is: " + FindMax(2, 5, 9));
         // Console.WriteLine("the result is " + IsUpperCase("AAA"));
         // Console.WriteLine("the result is " + IsLowerCase("AAA"));
-        Console.WriteLine("the password complexity is " + IsPasswordComplex("aaa24"));
+       // Console.WriteLine("the password complexity is " + IsPasswordComplex("aaa24"));
+        Console.WriteLine("the normalized string is: " + NormalizeString("Hello Niloo, Are you ok?       "));
     }
-}
+    }
+
