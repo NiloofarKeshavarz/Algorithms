@@ -84,3 +84,28 @@ class Program
     }
     }
 
+// using System;
+// using System.Diagnostics;
+// using System.Text;
+
+// class Program
+// {
+//     static void Main()
+//     {
+//         int n = 10000; // Number of concatenations
+
+//         Stopwatch stopwatch = new Stopwatch();
+//         stopwatch.Start();
+
+//         StringBuilder sb = new StringBuilder();
+//         for (int i = 0; i < n; i++)
+//         {
+//             sb.Append("value").Append(i).Append(" ");
+//         }
+
+//         string result = sb.ToString();
+//         stopwatch.Stop();
+
+//         Console.WriteLine($"Using 'StringBuilder': {stopwatch.ElapsedMilliseconds} ms");
+//     }
+// }
